@@ -1,0 +1,214 @@
+.bannerFees {
+    font-family: 'Mulish';
+}
+.btnFeesGrp {
+    height: 54px;
+    background: #1B1C1D;
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish';
+    margin-bottom: 50px;
+}
+
+.btnFees {
+    color: #AEB3B6;
+    width: 400px;
+    background: #1B1C1D;
+    border: 0;
+    font-size: 16px;
+}
+
+.btnFeesActive {
+    color: #39DB83;
+    background: #27292B;
+    border-radius: 8px;
+}
+
+.depositContainer {
+    font-family: 'Mulish';
+}
+
+.depositFeesTitile {
+    font-family: 'Mulish' !important;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.depositFeesText {
+    font-weight: 100;
+}
+
+#feesDesc {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: black;
+}
+
+.listFee {
+    height: 850px;
+    overflow: scroll;
+}
+
+.feesTable {
+    width: 45%;
+    height: 10%;
+    font-size: 1.25rem;
+}
+
+.feesRow {
+    border-bottom: 1px solid #373A3E;
+}
+
+.feesCell {
+    padding: 1rem;
+    display: inline-flex;
+    width: 50%;
+}
+
+.tokenText {
+    margin-top: 5px;
+}
+
+.tokenImg {
+    width: 28px;
+}
+
+#withdrawInfo {
+    font-family: 'Mulish';
+}
+
+.tooltip {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    top: -25px;
+    left: 150%;
+    bottom: -25px;
+    font-family: 'Mulish';
+    background-color: #27292B;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    position: absolute;
+    transition: "opacity .6s";
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -9px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #27292B transparent transparent;
+  }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.infoAlert {
+    width: 18px;
+    height: 18px;
+}
+
+#banner::before {
+    height: 20%;
+}
+
+#inputGrp {
+    display: flex;
+    width: 30%;
+    padding: 2px;
+    background-color: #1B1C1D;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#inputArrow {
+    padding: 10px;
+}
+
+#inputValue {
+    padding: 5px;
+    font-size: 1rem;
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: #1B1C1D;
+}
+
+#inputValue:focus {
+    box-shadow: none;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+#inputClose {
+    width: 8%;
+}
+
+#listFeeTable {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .btnFeesGrp {
+        height: 45px;
+        margin-bottom: 40px;
+    }
+    .btnFees {
+        width: 300px;
+        font-size: 14px;
+    }
+    .feesTable {
+        width: 50%;
+    }
+    #listFeeTable {
+        width: 130%;
+    }
+    #inputGrp {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #banner::before {
+        height: 15%;
+    }
+    .btnFeesGrp {
+        height: 40px;
+        margin-bottom: 30px;
+    }
+    .btnFees {
+        width: 200px;
+        font-size: 12px;
+    }
+    .feesTable {
+        width: 80%;
+    }
+    #inputGrp {
+        width: 50%;
+    } 
+    #listFeeTable {
+        width: 250%;
+    }
+    .tokenAlign {
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
